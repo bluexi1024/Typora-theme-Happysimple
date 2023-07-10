@@ -1,0 +1,252 @@
+@import url(./source/happysimple-set.css);
+
+/* 可选字体：
+   1.Windows自带字体
+   2.阿里妈妈普惠体：Ali_PuHuiTi
+   3.阿里妈妈刀隶体：Ali_DaoLiTi
+   4.阿里妈妈东方大楷：Ali_DongFangDaKai
+   5.阿里妈妈方圆体：Ali_FangYuanTi
+   6.阿里妈妈灵动体：Ali_LingDongTi
+   7.阿里妈妈数黑体：Ali_ShuHeiTi
+   8.钉钉进步体：DingDing_JinBuTi
+   9.思源黑体：SiYuan_HeiTi
+   10.思源宋体：SiYuan_SongTi
+   11.站酷仓耳渔阳体：ZhanKu_YvYangTi
+   注：使用2-11字体时，字体粗细属性可能会失效
+*/
+
+:root {
+    /* body */
+    --body-background-color: #c0e6ff;   /* 整个界面的背景颜色 */
+    --select-text-bg-color: #ffafa3;    /* 选中文本时的背景颜色 */
+
+    /* write */
+    --write-margin: 10px auto 10px;       /* 书写框的外边距 */
+    --write-padding: 10px 20px;           /* 书写框的内边距 */
+    --write-font-family: 'Ali_PuHuiTi';   /* 全局的字体名称 */
+    --write-font-size: 18px;              /* 全局的字体大小 */
+    --write-font-weight: 350px;           /* 全局的字体粗细 */
+    --write-line-height: 1.2;             /* 全局的行高 */
+    --write-color: #000;                /* 全局的字体颜色 */
+    --write-background: #fff;           /* 书写框的背景颜色,使用linear-gradient可以实现渐变色 */
+    --write-border: 2px solid rgba(0,0,0,0.75);  /* 书写框的边框 */
+    --write-border-radius: 5px;                    /* 书写框的边框圆角 */
+    --write-max-width: 80%;                        /* 书写框的比例 */
+
+    /* favico */
+    --favico-url: url(favicon.png);       /* 右下角的图片(可以使用动图) */
+                                          /* 若想取消显示,用var(--body-bg-color);替代 */
+    --favico-size: 10vw auto;             /* 图片大小 */
+    --favico-position: right bottom;      /* 图片位置 */
+
+    /* YAML */
+    --yaml-margin: 20px 0px;
+    --yaml-padding: 10px;
+    --yaml-font-family: 'SiYuan_HeiTi';
+    --yaml-font-size: 1.0rem;
+    --yaml-font-weight: 300;
+    --yaml-line-height: 1.2;
+    --yaml-color: #000;
+    --yaml-background-color: #f0f0f0;
+    --yaml-border: 2px solid black;
+    --yaml-border-radius: 5px;
+
+    /* 目录 */
+    --toc-margin: 20px 0px;
+    --toc-padding: 0px;
+    --toc-background-color: #fff;
+    --toc-border: 2px solid #000;
+    --toc-border-radius: 5px;
+    --toc-title-font-family: 'Ali_ShuHeiTi';    /* ----------设置`目录`二字---------- */
+    --toc-title-font-size: 1.0rem;
+    --toc-title-font-weight: 500;
+    --toc-title-line-height: 1.2;
+    --toc-title-color:#000;
+    --toc-content-font-family: 'SiYuan_HeiTi';  /* ----------设置目录内容---------- */
+    --toc-content-font-size: 1.0rem;
+    --toc-content-font-weight: 300;
+    --toc-content-line-height: 1.2;
+    --toc-content-color: #000;
+    --toc-content-border-top: 2px dashed #000;   /* 目录内容的上边框 */
+    --toc-content-hover-color: #5fa7e4;          /* 鼠标悬停时字体颜色 */
+    --toc-content-hover-font-weight: 400;          /* 鼠标悬停时字体粗细 */
+
+    /* 标题 */
+    --h1-margin: 30px 0px;
+    --h1-padding: 0px;
+    --h1-font-family: 'SiYuan_HeiTi';
+    --h1-font-size: 2.4rem;
+    --h1-font-weight: 500;
+    --h1-line-height: 1.2;
+    --h1-icon: '\e626';                /* h1标题前的图标*/
+    --h1-icon-margin-right: 5px;       /* 图标与标题的间距*/
+    --h2-margin: 25px 0px;
+    --h2-padding: 0px;
+    --h2-font-family: 'SiYuan_HeiTi';
+    --h2-font-size: 2.0rem;
+    --h2-font-weight: 400;
+    --h2-line-height: 1.2;
+    --h2-icon: '\e6e9';
+    --h2-icon-margin-right: 5px;
+    --h3-margin: 20px 0px;
+    --h3-padding: 0px;
+    --h3-font-family: 'SiYuan_HeiTi';
+    --h3-font-size: 1.6rem;
+    --h3-font-weight: 350;
+    --h3-line-height: 1.2;
+    --h3-icon: '\e67f';
+    --h3-icon-margin-right: 5px; 
+    
+    /* 引用块 */
+    --blockquote-margin: 10px 0px;
+    --blockquote-padding: 10px;
+    --blockquote-font-family: 'SiYuan_SongTi';
+    --blockquote-font-size: 1.0rem;
+    --blockquote-font-weight: 350;
+    --blockquote-line-height: 1.2;
+    --blockquote-border-left: 5px solid #5cb85c;   /* 引用块的左边框 */
+    --blockquote-background-color: #eef7f0;
+
+    /* 注释 */
+    --annotation-font-family: "Ali_ShuHeiTi";
+    --annotation-font-size: 1.0rem;
+    --annotation-font-weight: 400;
+    --annotation-color: #4e9452;
+    --annotation-line-height: 1.2;
+
+    /* 超链接 */
+    --link-margin: 2px;
+    --link-padding: 0px;
+    --link-font-family: 'Ali_PuHuiTi';
+    --link-font-size: 1.0rem;
+    --link-font-weight: 500;
+    --link-line-height: 1.2;
+    --link-color: #61abff;
+    --link-background-color: #fff;
+    --link-border-bottom: 2px solid #000;      /* 超链接的下边框 */
+    --link-hover-color: #db524f;
+    --link-hover-font-weight: 600;
+
+    /* 小标签 */
+    --note-margin: 0px;
+    --note-padding: 2px 4px;
+    --note-font-family: 'ZhanKu_YvYangTi';
+    --note-font-size: 1.0rem;
+    --note-font-weight: 400;
+    --note-line-height: 1.2;
+    --note-color: #fff;
+    --note-background-color-default: #8bc34a;   /* 小标签的默认颜色 */
+    --note-border: none;
+    --note-border-radius: 5px;
+
+    /* 强调型文本-下划线, 着重号, 波浪线 */
+    --emp-margin: 0px;
+    --emp-padding: 0px;
+    --emp-font-family: 'Ali_PuHuiTi';
+    --emp-font-size: 1.0rem;
+    --emp-font-weight: 400;
+    --emp-line-height: 1.2;
+    --emp-line-color: #fe5f58;
+
+    /* 折叠标签 */
+    --details-title-font-family: 'SiYuan_HeiTi';              /* 设置折叠标签题目 */
+    --details-title-font-size: 1.0rem;                        
+    --details-title-font-weight: 600;
+    --details-title-line-height: 1.2;                      
+    --details-title-color: rgba(0,0,0,0.75);     
+    --details-title-background-color: #d0f1d7;        
+    --details-content-font-family: 'SiYuan_SongTi';           /* 设置折叠标签内容 */
+    --details-content-font-size: 1.0rem;                     
+    --details-content-font-weight: 400;  
+    --details-content-line-height: 1.2;                     
+    --details-content-color: rgba(0,0,0,0.75);             
+    --details-content-background-color: #fff;
+    --details-border-before: 2px solid #000;                /* 展开前的边框 */
+    --details-border-after: 2px solid #000;                 /* 展开后的边框 */
+    --details-border-radius: 5px;
+
+    /* 水平线 */
+    --hr-style: 2px dashed #db524f;
+
+    /* 脚注 */
+    --fontnote-family: 'Times New Roman';
+    --fontnote-size: 0.8rem;
+    --fontnote-weight: 600;
+    --footnote-color: #e96900;
+    --footnote-background: transparent;
+
+    /* 参考文献 */
+    --font-refer-font-family: 'ZhanKu_YvYangTi';
+
+    /* 行内公式 */
+    --inline-eq-font-size: 1.0rem;
+    --inline-eq-color: blue;
+    
+    /* 普通公式 */
+    --eq-font-size: 1.0rem;
+    --eq-color: black;
+
+    /* 行内代码 */
+    --inline-code-font-family: 'Consolas';
+    --inline-code-font-size: 1.0rem;
+    --inline-code-font-weight: 400;
+    --inline-code-color: #4c4c4c;
+    --inline-code-background-color: #fff;
+    --inline-code-hover-color: #f0ad4e;
+
+    /* 代码块颜色 */
+    --code-font-family: 'Consolas';
+    --code-font-size: 0.9rem;
+    --code-font-weight: 350;
+    --code-font-color: #a6accd;
+    --code-border: 1px solid #000;
+    --code-top-background-color:rgb(33, 37, 43);                   /* 代码块头部背景颜色 */
+    --code-body-background-color:rgb(41, 45, 62);                  /* 代码块主体背景颜色 */
+    --code-body-border-top-color: rgba(167, 178, 189, 0.2);        /* 代码块主体上边框颜色 */
+    --code-linenum-color: #f0ad4e;                                 /* 行号颜色 */
+    --code-cursor-color: #fff;                                     /* 光标颜色 */
+    --code-divided-line-border: 1px solid white;                   /* 分割线配置 */
+    --code-inputbox-color: rgba(167, 178, 189, 0.2);               /* 输入框的颜色 */
+    --code-inputbox-border: 2px solid #000;                        /* 输入框的边框配置 */
+    --code-inputbox-focus-border: 2px solid #61abff;               /* 聚焦后输入框的边框配置 */
+    --code-selected-line-color: rgba(167, 178, 189, 0.2);          /* 光标所在代码行的颜色 */
+    --code-selected-code-color: rgba(167, 178, 189, 0.2);          /* 选择代码后,代码的背景色 */
+
+    /* 无序列表与有序列表 */
+    --list-margin: 10px 0px;
+    --list-padding: 0px;
+    --list-font-family: 'SiYuan_HeiTi';
+    --list-font-size: 1.0rem;
+    --list-font-weight: 350;
+    --list-font-color: #000;
+    --list-line-height: 2.0;                 /* 列表各项的行高 */
+    --list-li-margin: 10px 0px;              /* 列表各项的间距 */
+    --list-sign-font-size: 10px;             /* 无序列表的符号大小 */
+    --list-sign-top: 0.4rem;                 /* 用于调整无序列表的符号的位置 */
+    --list-sign-color: #db524f;            /* 有序列表的数字颜色 */
+    
+    /* 任务列表 */
+    --task-border-color: #db524f;
+    --task-sign-top: 5px;                    /* 用于调整任务列表的符号的位置 */
+
+    /* 图片 */
+    --img-margin: 20px 0px;
+    --img-padding: 0px;
+    --img-border-radius: 5px;
+    --img-name: "Fig." counter(imgNum);           /* 图片的自带图名,若不想使用,用''替代 */
+    --img-font-family: 'Times New Roman';
+    --img-font-size: 1.0rem;
+    --img-box-shadow: 5px 5px 18px #c9c9c9,     /* 图片的新拟态效果 */
+                     -5px -5px 18px #ffffff;
+
+    /* 表格颜色 */
+    --table-margin: 20px 0px;
+    --table-padding: 0px;
+    --table-width: 80%;                           /* 表格宽度*/
+    --table-font-family: 'SiYuan_SongTi';
+    --table-font-size: 1.0rem;
+    --table-th-background-color: #aed3e3;       /* 表头表头背景色 */
+    --table-odd-row-color: #ededed;             /* 表格内容奇数行颜色 */
+    --table-even-row-color: #c6e7c1;            /* 表格内容偶数行颜色 */
+    --table-border: 2px solid #000;             /* 表格边框配置 */
+}

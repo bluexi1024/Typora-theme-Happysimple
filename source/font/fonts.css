@@ -1,0 +1,59 @@
+/* 阿里妈妈普惠体 */
+@font-face {
+    font-family: 'Ali_PuHuiTi';
+    src: url('./Alibaba_PuHuiTi_2.0_55_Regular_55_Regular.ttf');
+}
+
+/* 阿里妈妈刀隶体 */
+@font-face {
+    font-family: 'Ali_DaoLiTi';
+    src: url('./AlimamaDaoLiTi.woff');
+}
+
+/* 阿里妈妈东方大楷 */
+@font-face {
+    font-family: 'Ali_DongFangDaKai';
+    src: url('./Alimama_DongFangDaKai_Regular.woff');
+}
+
+/* 阿里妈妈方圆体 */
+@font-face {
+    font-family: 'Ali_FangYuanTi';
+    src: url('./AlimamaFangYuanTiVF-Thin.woff');
+}
+
+/* 阿里妈妈灵动体 */
+@font-face {
+    font-family: 'Ali_LingDongTi';
+    src: url('./AlimamaAgileVF-Thin.woff');
+}
+
+/* 阿里妈妈数黑体 */
+@font-face {
+    font-family: 'Ali_ShuHeiTi';
+    src: url('./AlimamaShuHeiTi-Bold.woff');
+}
+
+/* 钉钉进步体 */
+@font-face {
+    font-family: 'DingDing_JinBuTi';
+    src: url('./DingTalk_JinBuTi_Regular.woff');
+}
+
+/* 思源黑体 */
+@font-face {
+    font-family: 'SiYuan_HeiTi';
+    src: url('./Source_Han_Sans_SC_Regular.otf');
+}
+
+/* 思源宋体 */
+@font-face {
+    font-family: 'SiYuan_SongTi';
+    src: url('./Source_Han_Serif_SC_Light_Light.otf');
+}
+
+/* 站酷仓耳渔阳体 */
+@font-face {
+    font-family: 'ZhanKu_YvYangTi';
+    src: url('./TsangerYuYangT_W03_W03.ttf');
+}
